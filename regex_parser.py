@@ -2,6 +2,7 @@ from bs4 import BeautifulSoup
 import json
 import re
 
+
 def parse_with_regex_overstock(html_content):
     soupHtml = BeautifulSoup(html_content, 'html.parser')
 
@@ -16,11 +17,9 @@ def parse_with_regex_overstock(html_content):
     allSavings = soupHtml.find_all('table', attrs={'border': '0', 'cellpadding': '0', \
                 'cellspacing': '0', 'width': '100%'})[2].find_all(class_=re.compile("littleorange"))
 
-    dataLength = len(allTitles)
-    #print(dataLength)
-
     # dictionary
     data = []
+    dataLength = len(allTitles)
 
     for i in range(0,dataLength):
         x = {}
@@ -43,6 +42,7 @@ def parse_with_regex_overstock(html_content):
     yJson = json.dumps(data)
     #print(yJson)
     return yJson
+
 
 def parse_with_regex_rtvslo(html_content):
     soupHtml = BeautifulSoup(html_content, 'html.parser')
@@ -68,9 +68,10 @@ def parse_with_regex_rtvslo(html_content):
     data["Lead"] = lead
     data["Content"] = contentText
 
-    yJson = json.dumps(data)
+    yJson = json.dumps(data, ensure_ascii=False)
     # print(data)
     return yJson
+
 
 if __name__ == "__main__":
     html1 = "WebPages/overstock.com/jewelry01.html"
