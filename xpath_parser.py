@@ -21,12 +21,12 @@ def parse_with_xpath_overstock(html_content):
     for i in range(0, dataLength):
         x = {}
         title = allTitles[i].text.strip()
-        content = allContent[i].text.strip().replace('\n', ' ')
+        content = re.sub("\n", " ", allContent[i].text.strip())
         listPrice = allListPrices[i].text.strip()
         price = allPrices[i].text.strip()
-        savingsText = allSavings[i].text.strip()
-        saving = savingsText.split(" ")[0]
-        savingPercent = savingsText.split(" ")[1]
+        savingsText = re.split("\s", allSavings[i].text.strip())
+        saving = savingsText[0]
+        savingPercent = savingsText[1]
 
         x["Title"] = title
         x["Content"] = content
@@ -45,15 +45,15 @@ def parse_with_xpath_rtvslo(html_content):
     soupHtml = BeautifulSoup(html_content, 'html.parser').prettify()
     dom = etree.HTML(soupHtml)
 
-    authorName = dom.xpath('//div[@class="author-name"]')[0].text.strip()
-    publishedTime = dom.xpath('//div[@class="publish-meta"]')[0].text.strip()
-    title = dom.xpath('//h1')[0].text.strip()
-    subtitle = dom.xpath('//div[@class="subtitle"]')[0].text.strip()
-    lead = dom.xpath('//p[@class="lead"]')[0].text.strip()
-    content = dom.xpath('//article[@class="article"]/p[@class="Body"]')
+    authorName = dom.xpath('//div[@class="author-name"]/text()')[0].strip()
+    publishedTime = dom.xpath('//div[@class="publish-meta"]/text()')[0].strip()
+    title = dom.xpath('//h1/text()')[0].strip()
+    subtitle = dom.xpath('//div[@class="subtitle"]/text()')[0].strip()
+    lead = dom.xpath('//p[@class="lead"]/text()')[0].strip()
+    content = dom.xpath('//article[@class="article"]/p/text()')
     contentText = ''
-    for i in content:
-        contentText += i.text.strip()
+    for text in content:
+        contentText += re.sub("\n", " ", text.strip())
 
     # dictionary
     data = {}

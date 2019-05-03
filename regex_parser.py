@@ -24,12 +24,12 @@ def parse_with_regex_overstock(html_content):
     for i in range(0,dataLength):
         x = {}
         title = allTitles[i].text
-        content = allContent[i].contents[0].replace('\n', ' ')
+        content = re.sub("\n", " ", allContent[i].contents[0])
         listPrice = allListPrices[i].text
         price = allPrices[i].text
-        savingsText = allSavings[i].text
-        saving = savingsText.split(" ")[0]
-        savingPercent = savingsText.split(" ")[1]
+        savingsText = re.split("\s", allSavings[i].text)
+        saving = savingsText[0]
+        savingPercent = savingsText[1]
 
         x["Title"] = title
         x["Content"] = content
@@ -56,10 +56,10 @@ def parse_with_regex_rtvslo(html_content):
     title = soupHtml.find(re.compile("h1")).text
     subtitle = soupHtml.find(class_=re.compile("subtitle")).text
     lead = soupHtml.find(class_=re.compile("lead")).text
-    content = soupHtml.find_all("article")[0].find_all(class_=re.compile("Body"))
+    content = soupHtml.find_all("article")[0].find_all("p")
     contentText = ''
     for i in content:
-        contentText += i.text
+        contentText += re.sub("\n", " ", i.text)
 
     data["AuthorName"] = authorName
     data["PublishedTime"] = publishedTime
