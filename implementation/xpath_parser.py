@@ -102,24 +102,24 @@ def parse_with_regex_avtonet(html_content):
 
 
 if __name__ == "__main__":
-    html1 = "input/overstock.com/jewelry01.html"
-    html2 = "input/overstock.com/jewelry02.html"
+    html1 = "../input/overstock.com/jewelry01.html"
+    html2 = "../input/overstock.com/jewelry02.html"
 
     htmlFile1 = open(html1, 'rb').read()
 
     json1 = parse_with_xpath_overstock(htmlFile1)
     print(json1)
 
-    html3 = "input/rtvslo.si/Audi A6 50 TDI quattro_ nemir v premijskem razredu - RTVSLO.si.html"
-    html4 = "input/rtvslo.si/Volvo XC 40 D4 AWD momentum_ suvereno med najboljše v razredu - RTVSLO.si.html"
+    html3 = "../input/rtvslo.si/Audi A6 50 TDI quattro_ nemir v premijskem razredu - RTVSLO.si.html"
+    html4 = "../input/rtvslo.si/Volvo XC 40 D4 AWD momentum_ suvereno med najboljše v razredu - RTVSLO.si.html"
 
     htmlFile2 = open(html3, 'r', encoding='utf-8').read()
 
     json2 = parse_with_xpath_rtvslo(htmlFile2)
     print(json2)
 
-    html5 = "input/avto.net/avtonet1.html"
-    html6 = "input/avto.net/avtonet2.html"
+    html5 = "../input/avto.net/avtonet1.html"
+    html6 = "../input/avto.net/avtonet2.html"
 
     htmlFile3 = open(html5, "rb").read()
 
