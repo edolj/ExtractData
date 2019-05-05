@@ -56,7 +56,7 @@ def parse_with_regex_rtvslo(html_content):
     title = soupHtml.find(re.compile("h1")).text
     subtitle = soupHtml.find(class_=re.compile("subtitle")).text
     lead = soupHtml.find(class_=re.compile("lead")).text
-    content = soupHtml.find_all("article")[0].find_all("p")
+    content = soupHtml.find("article").find_all("p")
     contentText = ''
     for i in content:
         contentText += re.sub("\n", " ", i.text)
@@ -70,6 +70,36 @@ def parse_with_regex_rtvslo(html_content):
 
     yJson = json.dumps(data, ensure_ascii=False)
     # print(data)
+    return yJson
+
+
+def parse_with_regex_avtonet(html_content):
+    soupHtml = BeautifulSoup(html_content, 'html.parser')
+
+    allTitles = re.findall(r"<span>(.+)</span>", str(soupHtml.find_all(class_=re.compile("Adlink"))))
+    allRegistrations = re.findall(r"\d{4}", str(soupHtml.find_all('li', text=re.compile('Letnik'))))
+    allKM = re.findall(r"(\d+)", str(soupHtml.find_all('li', text=re.compile('km'))))
+    allMotorData = re.findall(r"<li>(.*?)</li>", str(soupHtml.find_all('li', text=re.compile('kW'))))
+    allMenjalniki = re.findall(r"<li>(.*?)</li>", str(soupHtml.find_all('li', text=re.compile('ročni|avtomatski'))))
+    allPrices = soupHtml.find_all(class_=re.compile("ResultsAdPriceLogo"))
+
+    # dictionary
+    data = []
+    dataLength = len(allTitles)
+    allKM.insert(35, 0)
+
+    for i in range(0,dataLength):
+        x = {}
+        x["Ime"] = allTitles[i]
+        x["Letnik 1.registracije"] = allRegistrations[i]
+        x["Prevoženi km"] = allKM[i]
+        x["Motor"] = allMotorData[i]
+        x["Menjalnik"] = allMenjalniki[i]
+        x["Cena"] = allPrices[i].text.strip()
+        data.append(x)
+
+    yJson = json.dumps(data, ensure_ascii=False)
+    #print(yJson)
     return yJson
 
 
@@ -89,3 +119,12 @@ if __name__ == "__main__":
 
     json2 = parse_with_regex_rtvslo(htmlFile2)
     print(json2)
+
+    html5 = "WebPages/avto.net/avtonet1.html"
+    html6 = "WebPages/avto.net/avtonet2.html"
+
+    htmlFile3 = open(html5, "rb").read()
+
+    json3 = parse_with_regex_avtonet(htmlFile3)
+    print(json3)
+

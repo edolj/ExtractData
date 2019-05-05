@@ -69,6 +69,38 @@ def parse_with_xpath_rtvslo(html_content):
     return yJson
 
 
+def parse_with_regex_avtonet(html_content):
+    soupHtml = BeautifulSoup(html_content, 'html.parser').prettify()
+    dom = etree.HTML(soupHtml)
+
+    allTitles = dom.xpath('//div[@class="ResultsAdDataTop"]/a[@class="Adlink"]/span/text()')
+    allRegistrations = re.findall(r"\d{4}", str(dom.xpath('//div[@class="ResultsAdDataTop"]/ul/li[1]/text()')))
+    allKM = re.findall(r"(\d+)", str(dom.xpath('//div[@class="ResultsAdDataTop"]/ul/li[contains(.," km")]/text()')))
+    allMotorData = dom.xpath('//div[@class="ResultsAdDataTop"]/ul/li[contains(.," kW")]/text()')
+    allMenjalniki = dom.xpath('//div[@class="ResultsAdDataTop"]/ul/li[contains(.,"ročni") or contains(.,"avtomatski")]/text()')
+    allPrices = dom.xpath('//div[@class="ResultsAd"]/div[@class="ResultsAdPriceLogo"]/div[@class="ResultsAdPrice"]/text()')
+    allPrices = [s for s in allPrices if "€" in s]  # gets rid of newline characters
+
+    # dictionary
+    data = []
+    dataLength = len(allTitles)
+    allKM.insert(35, 0)
+
+    for i in range(0,dataLength):
+        x = {}
+        x["Ime"] = allTitles[i].strip()
+        x["Letnik 1.registracije"] = allRegistrations[i].strip()
+        x["Prevoženi km"] = allKM[i]
+        x["Motor"] = allMotorData[i].strip()
+        x["Menjalnik"] = allMenjalniki[i].strip()
+        x["Cena"] = allPrices[i].strip()
+        data.append(x)
+
+    yJson = json.dumps(data, ensure_ascii=False)
+    # print(yJson)
+    return yJson
+
+
 if __name__ == "__main__":
     html1 = "WebPages/overstock.com/jewelry01.html"
     html2 = "WebPages/overstock.com/jewelry02.html"
@@ -85,3 +117,11 @@ if __name__ == "__main__":
 
     json2 = parse_with_xpath_rtvslo(htmlFile2)
     print(json2)
+
+    html5 = "WebPages/avto.net/avtonet1.html"
+    html6 = "WebPages/avto.net/avtonet2.html"
+
+    htmlFile3 = open(html5, "rb").read()
+
+    json3 = parse_with_regex_avtonet(htmlFile3)
+    print(json3)
