@@ -1,0 +1,214 @@
+<html><body><div></div><div>
+<div>
+<div>
+<div>
+<a>
+<img/>
+</a>
+</div>
+<div>
+<ul>
+<li>
+<a>
+<span>
+<i></i>
+                          moj.avto.net</span>
+</a>
+</li>
+</ul>
+</div>
+<div></div>
+</div>
+<div>
+<div>
+<ul>
+<li><a><span><i></i></span></a></li>
+<li><a><span>Avto</span></a></li>
+<li><a><span>Moto</span></a></li>
+<li><a><span>Gospodarska</span></a></li>
+<li><a><span>Mehanizacija</span></a></li>
+<li><a><span>Prosti čas</span></a></li>
+<li><a><span>Deli in oprema</span></a></li>
+<li><a><span>moj.avto.net</span></a></li>
+</ul>
+</div>
+</div>
+</div>
+</div><div>
+<div>
+<div>
+<a><span>Pojdi na uvodno stran</span></a>
+<a><span>Mobilna stran</span></a>
+</div>
+<div>
+<a><span>Avto oglasi</span></a>
+<a><span>Katalog novih vozil</span></a>
+<a><span>Cenitev vozil</span></a>
+<a><span>Rent a car</span></a>
+<a><span>Karambolirana / nebrezhibna vozila</span></a>
+<a><span>Oldtimer-ji</span></a>
+<a><span>Pregled po znamkah</span></a>
+</div>
+<div>
+<a><span>Motorna kolesa</span></a>
+<a><span>ATV  /UTV</span></a>
+<a><span>Mopedi</span></a>
+<a><span>Scooterji</span></a>
+<a><span>Gokart</span></a>
+<a><span>Oldtimer</span></a>
+<a><span>Moto oprema</span></a>
+<a><span>Poškodovana mot.kolesa</span></a>
+<a><span>Rent a moto</span></a>
+</div>
+<div>
+<a><span>Dostavna vozila</span></a>
+<a><span>Tovorna vozila</span></a>
+<a><span>Avtobusi</span></a>
+<a><span>Tovorne prikolice</span></a>
+<a><span>Ponudbe za najem</span></a>
+</div>
+<div>
+<a><span>Gradbena mehanizacija</span></a>
+<a><span>Kmetijska mehanizacija</span></a>
+<a><span>Gozdarska mehanizacija</span></a>
+<a><span>Komunalna mehanizacija</span></a>
+<a><span>Viličarji</span></a>
+<a><span>Ponudbe za najem</span></a>
+</div>
+<div>
+<a><span>Avtodomi</span></a>
+<a><span>Počitniške prikolice</span></a>
+<a><span>Šotorske prikolice</span></a>
+<a><span>Snemljivi bivalniki</span></a>
+<a><span>Mobilne hišice</span></a>
+<a><span>Camping oprema</span></a>
+<a><span>Ponudbe za najem</span></a>
+</div>
+<div>
+<a><span>Rezervni deli</span></a>
+<a><span>Dodatna + tuning oprema</span></a>
+<a><span>Avtoakustika</span></a>
+<a><span>Olja in tekočine</span></a>
+<a><span>Pnevmatike</span></a>
+<a><span>Platišča</span></a>
+<a><span>Servisna oprema</span></a>
+</div>
+<div>
+<a><span>Prijava v sistem urejanja</span></a>
+<a><span>Registracija</span></a>
+<a><span>Oddaj nov oglas</span></a>
+<a><span>Parkirani oglasi</span></a>
+</div>
+<div>
+<a><span>Pregled vseh rubrik</span></a>
+</div>
+</div>
+</div><div>#PCDATA<div>
+<div>
+<div>
+<div><h2>Hitri pregled rubrik</h2></div>
+</div>
+<div>
+<div><h3>Avto</h3></div>
+<div><h3>Moto</h3></div>
+<div><h3>Gospodarska vozila</h3></div>
+<div><h3>Prosti čas</h3></div>
+<div><h3>Oprema</h3></div>
+<div><h3>moj.avto.net</h3></div>
+</div>
+<div>
+<div>
+<ul>
+<li><a>Avto oglasi</a></li>
+<li><a>Pregled po znamkah</a></li>
+<li><a>Oldtimer</a></li>
+<li><a>Karambolirana vozila</a></li>
+<li><a>Katalog novih vozil</a></li>
+<li><a>Cenitev vozil</a></li>
+<li><a>Rent a car</a></li>
+</ul>
+</div>
+<div>
+<ul>
+<li><a>Motorna kolesa</a></li>
+<li><a>ATV, UTV, 4 kolesniki</a></li>
+<li><a>Mopedi</a></li>
+<li><a>Scooterji</a></li>
+<li><a>Mini moto</a></li>
+<li><a>Go-Kart</a></li>
+<li><a>Motorne sani</a></li>
+<li><a>Oldtimer</a></li>
+<li><a>Rent a moto</a></li>
+<li><a>Moto oprema</a></li>
+</ul>
+</div>
+<div>
+<ul>
+<li><a>Dostavna</a></li>
+<li><a>Tovorna</a></li>
+<li><a>Avtobusi</a></li>
+<li><a>Tovorne prikolice</a></li>
+<br/><h3>Mehanizacija</h3>
+<li><a>Gradbena mehanizacija</a></li>
+<li><a>Kmetijska mehanizacija</a></li>
+<li><a>Gozdarska mehanizacija</a></li>
+<li><a>Komunalna mehanizacija</a></li>
+<li><a>Viličarji</a></li>
+<li><a>Ponudbe za najem</a></li>
+<li><a>Rezervni deli in dodatna oprema</a></li>
+</ul>
+</div>
+<div>
+<ul>
+<li><a>Avtodomi</a></li>
+<li><a>Počitniške prikolice</a></li>
+<li><a>Mobilne hišice</a></li>
+<li><a>Snemljivi bivalniki</a></li>
+<li><a>Ponudbe za najem</a></li>
+<li><a>Camping oprema</a></li>
+<li><a>Navtika</a></li>
+<li></li>
+</ul>
+</div>
+<div>
+<ul>
+<li><a>Rezervni deli</a></li>
+<li><a>Dodatna oprema</a></li>
+<li><a>Avtoakustika</a></li>
+<li><a>Olja in tekočine</a></li>
+<li><a>Pnevmatike</a></li>
+<li><a>Platišča</a></li>
+<li><a>Servisna oprema</a></li>
+</ul>
+</div>
+<div>
+<ul>
+<li><a>Registracija trgovca</a></li>
+<li><a>Prijava trgovca v sistem</a></li>
+<li><a>moj.avto.net</a></li>
+<li></li>
+<li><a>Oddajte nov oglas</a></li>
+<li><a>Urejanje oglasa</a></li>
+<li></li>
+<li><a>Pomoč uporabnikom</a></li>
+<li><a>Pravno obvestilo in Varstvo zasebnosti</a></li>
+<li></li>
+<li><a>O piškotkih</a></li>
+<li><a>Cenik oglaševanja</a></li>
+</ul>
+</div>
+</div>
+</div>
+
+<div>
+<div>
+<div>
+<a>Avtonet d.o.o., Obala 77, SI-6320 Portorož, T: 080 / 28 77 ali 05 / 6713 700, F: 05 / 6713 701</a><br/>
+<a>© Avtonet d.o.o. 1997-2019. Vse pravice pridržane.</a>
+</div>
+<div>
+<a><img/></a>
+</div>
+</div>
+</div>
+</div><div></div><div><div></div></div><div></div><div><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><a></a><div></div><a><span></span></a><a><span></span></a></div></div></body></html>
