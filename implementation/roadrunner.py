@@ -77,6 +77,9 @@ if __name__ == "__main__":
     #html1 = "../input/overstock.com/jewelry01.html"
     #html2 = "../input/overstock.com/jewelry02.html"
 
+    #html1 = "../input/rtvslo.si/Audi A6 50 TDI quattro_ nemir v premijskem razredu - RTVSLO.si.html"
+    #html2 = "../input/rtvslo.si/Volvo XC 40 D4 AWD momentum_ suvereno med najboljše v razredu - RTVSLO.si.html"
+
     htmlFile1 = open(html1, 'rb').read()
     htmlFile2 = open(html2, 'rb').read()
 

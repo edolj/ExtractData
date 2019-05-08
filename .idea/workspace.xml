@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="71ad42b2-17fa-462c-92e0-d81a609653a1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/output/regex_output.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/output/roadrunner_output.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/output/xpath_output.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/implementation/roadrunner.py" beforeDir="false" afterPath="$PROJECT_DIR$/implementation/roadrunner.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/roadrunner_output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/output/roadrunner_output.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,12 +14,15 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/implementation/roadrunner.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="38" selection-start-column="38" selection-end-column="38" />
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="210">
+                <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -58,6 +60,7 @@
         <option value="$PROJECT_DIR$/output/xpath_output.txt" />
         <option value="$PROJECT_DIR$/output/roadrunner_output.txt" />
         <option value="$PROJECT_DIR$/implementation/roadrunner.py" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -79,11 +82,6 @@
             <path>
               <item name="ExtractData" type="b2602c69:ProjectViewProjectNode" />
               <item name="ExtractData" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ExtractData" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ExtractData" type="462c0819:PsiDirectoryNode" />
-              <item name="implementation" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -229,14 +227,6 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/WebPages/xpath_parser.py" />
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/input/avto.net/avtonet1.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-3641" />
@@ -246,16 +236,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/implementation/regex_parser.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1064">
-          <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#29#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -278,15 +258,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/output/roadrunner_output.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
+        <state relative-caret-position="190">
+          <caret line="258" selection-start-line="258" selection-end-line="258" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/implementation/regex_parser.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="106">
+          <caret line="98" column="22" lean-forward="true" selection-start-line="98" selection-start-column="22" selection-end-line="98" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/implementation/roadrunner.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="38" selection-start-column="38" selection-end-column="38" />
+        <state relative-caret-position="1095">
+          <caret line="73" column="4" selection-start-line="73" selection-start-column="4" selection-end-line="73" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="210">
+            <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
